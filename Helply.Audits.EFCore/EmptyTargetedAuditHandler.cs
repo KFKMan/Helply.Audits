@@ -6,7 +6,6 @@ namespace Helply.Audits.EFCore
 	{
 		public static EmptyTargetedAuditHandler True = new EmptyTargetedAuditHandler(true);
 		public static EmptyTargetedAuditHandler False = new EmptyTargetedAuditHandler(false);
-		
 
 		public bool ProcessAny { get; private set; } = true;
 

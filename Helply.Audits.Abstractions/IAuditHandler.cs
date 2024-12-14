@@ -2,6 +2,6 @@
 {
 	public interface IAuditHandler
 	{
-		void Handle(object entry);
+		void Process(object entry);
 	}
 }

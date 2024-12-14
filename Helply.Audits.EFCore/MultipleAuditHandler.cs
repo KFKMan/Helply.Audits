@@ -28,7 +28,7 @@ namespace Helply.Audits.EFCore
 			return Handlers.Contains(handler);
 		}
 
-		public void Handle(object entry)
+		public void Process(object entry)
 		{
 			var query = Handlers.Where(x => x.CanProcess(entry));
 			if(ProcessType == MultipleHandlerProcessType.One)

@@ -65,13 +65,13 @@ namespace Helply.Audits.EFCore
 				switch (entry.State)
 				{
 					case EntityState.Deleted:
-						DeleteHandler.Handle(entry.Entity);
+						DeleteHandler.Process(entry.Entity);
 						break;
 					case EntityState.Added:
-						AddHandler.Handle(entry.Entity);
+						AddHandler.Process(entry.Entity);
 						break;
 					case EntityState.Modified:
-						ModifyHandler.Handle(entry.Entity);
+						ModifyHandler.Process(entry.Entity);
 						break;
 				}
 			}
